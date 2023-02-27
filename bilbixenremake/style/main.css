@@ -1,0 +1,976 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-family: "Tahoma", sans-serif;
+}
+
+body {
+    margin: 0;
+}
+
+header, section, footer, aside, nav, main, article, figure {
+    display: block; 
+}
+
+[class*="col-"] {
+    float: left;
+    padding: 1px;
+}
+
+.row:after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+.hdrcontainer {
+    display: flex;
+    justify-content: center;
+}
+
+#logowrap {
+    width: 50%;
+}
+
+.logo {
+    padding: 0;
+    margin: 0;
+}
+
+header nav {
+    width: 50%;
+}
+
+.mobinav {
+    display: none;
+}
+
+.mobiloginnav {
+    display: none;
+}
+
+header nav .desknav {
+    margin:0;
+    padding:0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header nav .desknav li {
+    list-style-type: none;
+    padding: 0 5px 0 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header nav .desknav li a {
+    text-decoration: none;
+    color: black;
+    background-color: white;
+}
+
+#tophdrwrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hdrwrapper{
+    background-image: url(../images/banner-bg.png);
+    background-color: black;
+    position: relative;
+    background-repeat: no-repeat;
+    height: 200px;
+    color: white;
+    display: flex;
+    width: 100%;
+    padding: 0 10% 0 10%;
+}
+
+.dolikewrap {
+    width: 100%;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+header section h2 {
+    padding: 0;
+    margin: 0;
+    color: white;
+    font-size: 2.4em;
+    font-weight: lighter;
+}
+
+header section .smalltext {
+    font-size: 1.3em;
+    font-weight: lighter;
+}
+
+header section h3 {
+    padding: 0;
+    margin: 0;
+    color: white;
+    font-size: 2.4em;
+    font-weight: lighter;
+}
+
+.car {
+    color: #111;
+    position: absolute;
+    left: 60%;
+    top: 15%;
+}
+
+#promos {
+    display: flex;
+    justify-content: center;
+}
+
+#promowrap {
+    margin-top: 60px;
+    display: flex;
+    justify-content: space-around;
+}
+
+#left{
+    margin-top: 25px;
+    border-radius: 25px 25px 0 25px;
+    background-color: #195e82;
+    padding: 10px;
+    padding-left: 25px;
+    padding-right: 25px;
+    color: white;
+}
+
+#left h1 {
+    font-size: 2.2em;
+    margin-left: 14px;
+    margin-bottom:0;
+}
+
+#left h2 {
+    font-size: 1.2em;
+    margin-left: 16px;
+    margin-bottom:0;
+    margin-top: 10px;
+}
+
+#left p {
+    margin-left: 16px;
+}
+
+#right {
+    margin-top: 16px;
+}
+
+#right h1{
+    font-size: 1.5em;
+
+}
+
+#right h2 {
+    font-size: 1.2em;
+    margin-bottom:0;
+    margin-top: 10px;
+}
+
+#howitworkswrap {
+    display: flex;
+    justify-content: center;
+    max-width: 100%;
+}
+
+.howitworks {
+    margin-top: 50px;
+    background-image: url(../images/how-it-works-2.png);
+    position: relative;
+    background-repeat: no-repeat;
+    height: 300px;
+    background-color: black;
+    color: white;
+}
+
+.howitworks h1 {
+    color: white;
+    width: 100%;
+    text-align: center;
+}
+
+.hiwimgwrap {
+    display: flex;
+    justify-content: space-around;
+}
+
+.figwrap {
+    display: flex;
+    align-items: center;
+
+}
+
+.howitworks figure {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.howitworks figure figcaption {
+    color: white;
+    margin-top: 10px;
+}
+
+.howitworks figure .test {
+}
+
+#footerwrap {
+    display: flex;
+    justify-content: center;
+}
+
+footer {
+    background-image: url(../images/footer-bg.png);
+    height: 300px;
+    color: white;
+    background-color: black;
+    bottom: 0;
+    display: block;
+    display: flex;
+    flex-directioN: column;
+    align-items: center;
+    justify-content: center;
+}
+
+footer ul {
+    padding: 0;
+}
+
+footer ul li {
+    list-style-type: none;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+footer p {
+    text-align: center;
+}
+
+#randcarwrap {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.randcar {
+
+}
+
+#tilbudwrap {
+    display: flex;
+    justify-content: space-around;
+}
+
+.randcar h1 {
+    position: relative;
+    text-align: center;
+    font-size: 2.4em;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    font-weight: lighter;
+}
+
+.stwrap {
+    width: 30%;
+}
+
+.supertilbud {
+    width: 100%;
+}
+
+.supertilbud h1 {
+    font-size: 1.8em;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    font-weight: lighter;
+}
+
+.todaytop {
+}
+
+.todaytop img {
+    max-height: 253px;
+    width: 100%;
+}
+
+.todaybottom {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    border: 3px solid #e3e4e5;
+    border-top: 0;
+    padding: 40px 10px 0 10px;
+}
+
+.todaybottom p {
+    padding: 10px 15px 10px 15px;
+    margin: 0;
+    font-size: 1.2em;
+    font-weight: lighter;
+}
+
+.todaybottom .carname {
+    color: #54a3c4;
+}
+
+.todayprice {
+    position: absolute;
+    background-color: #54a3c4;
+    margin-top: -65px;
+    margin-left: -13px;
+}
+
+.todayprice p {
+    color: white;
+    text-align: center;
+}
+
+.todaycomments {
+    position: absolute;
+    background-color: #54a3c4;
+
+    margin-top: -65px;
+    right: -3px;
+    text-align: center;
+    background-image: url('../images/commenticon.png');
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.commentlinkwrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.todaycomments a {
+    text-decoration: none;
+    color: #54a3c4;
+}
+
+.todaybottomcar {
+    margin-bottom: 50px;
+}
+
+.todayallinfo {
+    background-color: #54a3c4;
+    position: absolute;
+    bottom: -3px;
+    width: 101.5%;
+    left: -3px;
+    text-align: center;
+}
+
+.todayallinfo a {
+    text-decoration: none;
+    color: white;
+}
+
+#adminnav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+.adnavitem {
+    float: left;
+}
+
+.adnavitem a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: center
+}
+
+.findbilwrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.loginwrap {
+    display: flex;
+    justify-content: center;
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+
+#login {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    background-color: #eeeeee;
+    padding: 15px;
+    margin: auto;
+    margin-bottom: 30px;
+}
+
+#login input[type=text], #login input[type=password], #login form select {
+    border: none;    
+    margin-bottom: 15px;
+    padding: 10px;
+    border-radius: 2px;
+    width: 100%;
+}
+
+#login input[type=submit] {
+    background-color: #c0c0c0;
+    border: none;
+    outline: none;
+    border-radius: 2px;
+    padding: 10px;
+}
+
+.adnavitem a:hover:not(.active) {
+    background-color: #111;
+}
+
+.active {
+    background-color: #4CAF50;
+}
+
+.trow {
+    display: table-row;
+    background: #f6f6f6;
+    &:nth-of-type(odd){
+        background: #e9e9e9;
+    }
+    &.header {
+        font-weight: 900;
+        color: #ffffff;
+        background: #ea6153;
+    }
+}
+
+.green {
+    background: #27ae60;
+    color: floralwhite;
+}
+
+.blue {
+    background: #2980b9;
+    color: floralwhite;
+}
+.cell {
+    padding: 6px 12px;
+    display: table-cell;
+}
+
+.editcontent {
+    margin: 30px 0 20px 0;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    overflow: auto;
+}
+
+.table {
+    position: relative;
+    margin: auto;
+    border-collapse: collapse;
+}
+
+#inscat {
+    margin-top: 20px;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    background-color: #333;
+}
+
+#inscat:hover {
+    background-color: #111;
+}
+
+.carparent {
+    display: flex;
+    flex-direction: row;
+    flex-flow: row wrap;
+    justify-content: center;
+    gap: 1rem;
+    padding: 5px;
+    margin-bottom: 40px;
+}
+
+.carinfowrap {
+    width:350px;
+}
+
+.carinfo {
+    height: 450px;
+    width: 350px;
+    float: left;
+    display: flex;
+    flex-direction: column;     /* make main axis vertical */
+    justify-content: center;    /* center items horizontally, in this case */
+    margin: 5px;
+}
+
+.carwrap h2 {
+    text-align: center;
+
+}
+
+.flavor {
+    float: left;
+    height: 230px;
+    text-align: center;
+    justify-content: center;
+}
+
+.flavor a {
+    text-decoration: none;
+    color: black;
+    font-size: 1.3em;
+}
+
+.singlewrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.singletop {
+    display: flex;
+    justify-content: center;
+}
+
+.singlebottom {
+    display: flex;
+    justify-content: center;
+}
+
+.singlecar {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.singlecar:after {
+    content: '';
+    width: 25em;
+}
+
+.singleinfo {
+    float: left;
+    display: flex;
+    flex-direction: column;     /* make main axis vertical */
+    justify-content: center;    /* center items horizontally, in this case */
+    margin: auto;
+}
+
+.singleimg {
+    width: 575px;
+    margin: auto;
+}
+
+.singleimg img{
+    width: 100%;
+    height: auto;
+}
+
+.infobit {
+    float: left;
+    height: 4em;
+    text-align: center;
+    justify-content: center;
+    background-color: #f2f2f2;
+    margin: 10px 0 10px 0;
+}
+
+.infobit p {
+    margin: 0;
+    padding: 0;
+    position: relative;
+    top: 13%;
+    font-size: 1.2em;
+}
+
+.infoname {
+    font-size: 1.6em;
+    position: relative;
+    top: 23%;
+}
+
+.infobitblue {
+    float: left;
+    height: 4em;
+    text-align: center;
+    justify-content: center;
+    background-color: #195e82;
+    margin: 10px 0 10px 0;
+    color: white;
+}
+
+.infobitblue p {
+    margin: 0;
+    padding: 0;
+    position: relative;
+    top: 13%;
+    font-size: 1.2em;
+}
+
+#singlecomments {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#comments {
+    color: black;
+    padding: 0 10px 0px 10px;
+    min-height: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+}
+
+#commentscontents {
+    width: 75%;
+    background-color: white;
+    padding: 10px;
+    border: 1px solid black;
+}
+
+.commentinfo {
+    border-bottom: 1px solid black;
+}
+
+.commentinfo h2 p {
+    margin: 0;
+    font-size: 10pt;
+}
+
+#mobicrtcomment {
+    color: black;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    display: none;
+}
+
+#crtcomment {
+    color: black;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+
+#crtcommentcontents {
+    width: 75%;
+    display: flex;
+    justify-content: center;
+}
+
+.comcontainer {
+    margin-top: 80px;
+    background-image: url(../images/how-it-works.png);
+    background-repeat: no-repeat;
+    color: white;
+    margin-bottom: 100px;
+}
+
+.comcontainer h1 {
+    padding-left: 90px;
+}
+
+.kontakt {
+    width: 60%;
+}
+
+.kontakt form {
+    background-color: #eeeeee;
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    margin: auto;
+    margin-bottom: 30px;
+}
+
+.kontakt form input[type=text], .kontakt form input[type=email], .kontakt form textarea, .kontakt form select, .kontakt form input[type=number] {
+    border: none;    
+    margin-bottom: 15px;
+    padding: 10px;
+    border-radius: 2px;
+    width: 100%;
+}
+
+.kontakt form textarea {
+    max-width: 100%;
+}
+
+.kontakt form input[type=submit] {
+    background-color: #c0c0c0;
+    border: none;
+    outline: none;
+    border-radius: 2px;
+    padding: 10px;
+}
+
+@media only screen and (max-width: 1265px) {
+    nav {
+        width: 75% !important;
+    }
+
+    #logowrap {
+        width: 25%;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+
+}
+
+@media only screen and (min-width: 1024px) {
+    /* For desktop: */
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
+}
+
+
+@media only screen and (max-width: 1024px) {
+    /* For tablets: */
+    .col-t-1 {width: 8.33%;}
+    .col-t-2 {width: 16.66%;}
+    .col-t-3 {width: 25%;}
+    .col-t-4 {width: 33.33%;}
+    .col-t-5 {width: 41.66%;}
+    .col-t-6 {width: 50%;}
+    .col-t-7 {width: 58.33%;}
+    .col-t-8 {width: 66.66%;}
+    .col-t-9 {width: 75%;}
+    .col-t-10 {width: 83.33%;}
+    .col-t-11 {width: 91.66%;}
+    .col-t-12 {width: 100%;}
+
+    header section p {
+        font-size:20px;
+    }
+
+    #tophdrwrap {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+    }
+
+    #logowrap {
+        width: 100%;
+        display: flex;
+    }
+
+    #logowrap a {
+        margin: auto;
+    }
+
+    nav {
+        width: 100% !important;
+        display: flex;
+    }
+
+    nav .mobinav {
+        margin: auto;
+    }
+
+    .desknav {
+        display: none !important;
+    }
+
+    .mobinav {
+        display: inline-block;
+    }
+
+    .mobiloginnav p, .mobiloginnav a {
+        font-size: 20px;
+        margin: 0;
+        padding: 0
+    }
+
+    .dropbtn {
+        background-color: white;
+        color: white;
+        padding: 16px;
+        font-size: 16px;
+        border: none;
+    }
+
+    .dropbtn img {
+        height: 35px;
+        width: 35px;
+    }
+
+    .dropdown-content {
+        display: none;
+        background-color: #f1f1f1;
+        z-index: 20;
+        position: absolute;
+        margin: auto;
+    }
+
+    .dropdown-content a {
+        color: black;
+        padding: 5px 16px;
+        text-decoration: none;
+        display: block;
+        width: 200px;
+        text-align: center;
+    }
+
+    .dropdown-content a:hover {background-color: #ddd}
+
+    .mobinav:hover .dropdown-content {
+        display: block;
+    }
+
+    .dropdown:hover .dropbtn {
+        background-color: #3e8e41;
+    }
+
+    header .car img {
+        display: none;
+    }
+
+    .hdrwrapper {
+        padding: 0 0 0 0;
+    }
+
+    .dolikewrap {
+        width: 100%;
+        height: 200px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    #promowrap {
+        flex-direction: column;
+    }
+
+    #right {
+        width: 100%;
+        padding: 0 15px 0 15px;
+        margin: 0;
+    }
+
+    #left {
+        width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+
+    .hiwimgwrap {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .howitworks {
+        height: 100%;
+    }
+
+    #tilbudwrap {
+        flex-direction: column;
+        align-items: center;
+        margin: auto;
+        width: 40%;
+    }
+
+    .stwrap {
+        width: 100%;
+    }
+
+    #mobicrtcomment {
+        display: flex;
+    }
+
+    #crtcomment {
+        display: none;
+    }
+
+    #crtcommentcontents {
+        width: 100%;
+    }
+
+    #comments {
+        width: 100%;
+    }
+
+    #singlecomments {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .comcontainer h1 {
+        padding-left: 0;
+        text-align: center;
+    }
+
+    .carinfowrap {
+        width: 50%;
+        display: flex;
+        justify-content: center;
+    }
+
+}
+
+@media only screen and (max-width: 500px) {
+    #tilbudwrap {
+        width: 315px;
+    }
+
+    .carinfo {
+        width: 315px;
+    }
+    
+    .displaynone {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 740px) {
+    .carinfowrap {
+        width: 100%;
+    }
+}
+
